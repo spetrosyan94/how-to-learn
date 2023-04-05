@@ -10,15 +10,18 @@
 }
 
 .header {
+  border: 2px red solid;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  display: flex;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
-  margin: 0;
-  padding: 0;
   /* выше установили ограничения для секции */
 }
 
@@ -41,6 +44,8 @@ z-index: 5;
 }
 
 .header__title {
+margin: 0;
+padding: 0;
 font-size: 102px;
 line-height: 96px;
 font-weight: 600;
@@ -53,12 +58,13 @@ color: #000000;
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
-  bottom: 0;
-  margin-left: 64px;
-  margin-bottom: 30px;
+  left: 64px;
+  bottom: 30px;
   max-width: 388px;
   position: absolute;
   z-index: 4;
@@ -90,21 +96,21 @@ color: #000000;
 }
 
 .two-columns {
-
-  display: flex;
-  margin: 0 auto;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
 }
 
 .two-columns__brief {
+  padding: 0;
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   width: 175px;
   color: #2f80ed;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .two-columns__main-text {
@@ -114,7 +120,7 @@ color: #000000;
 align-self: start;
 }
 
-.main-text__paragraph {
+.two-columns__paragraph {
   margin: 0;
   padding: 0;
   line-height: 34px;
@@ -124,11 +130,11 @@ align-self: start;
   align-self: start;
 }
 
-.main-text__paragraph:nth-last-child(1) {
+.two-columns__paragraph:nth-last-child(1) {
   margin-bottom: 0;
 }
 
-.main-text__span-accent {
+.two-columns__span-accent {
   font-weight: bolder;
   margin: 0;
   padding: 0;
@@ -176,6 +182,7 @@ flex-direction: row;
 justify-content:space-between;
 flex-wrap: wrap;
 align-items:self-start;
+list-style-type: none;
 
 }
 
@@ -212,7 +219,7 @@ background-color: #f2f2f2;
 box-sizing:border-box;
 padding-top: 100px;
 position: relative;
-z-index: -2;
+z-index: 0;
 }
 
 .feynman__title {
@@ -243,13 +250,16 @@ z-index: -2;
 .feynman__link {
   color: #2f80ed;
   text-decoration: none;
-  margin-right: 48px;
   position: absolute;
-  height:50%;
+  top:50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
 }
 
 .feynman__image {
