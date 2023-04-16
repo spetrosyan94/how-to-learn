@@ -1,5 +1,5 @@
 .video__iframe {
-  /*border: 2px blue solid;*/
   width: 515px;
   height: 316px;
+  border: none;
 }
