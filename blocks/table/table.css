@@ -1,0 +1,14 @@
+.table {
+  padding: 0;
+  width: 1100px;
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: self-start;
+  list-style-type: none;
+}
