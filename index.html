@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -46,29 +45,26 @@
         <ul class="cards">
 
           <li class="cards__item">
-            <img class="cards__image" src="./images/cards-attention.png"
-              alt='Здесь находится картинка для этой карточки'>
+            <img class="cards__image" src="./images/cards-attention.png" alt='Здесь находится картинка'>
             <h3 class="cards__title">Два вида внимания</h3>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
               мышление.</p>
           </li>
 
           <li class="cards__item">
-            <img class="cards__image" src="./images/cards-recall.png" alt='Здесь находится картинка для этой карточки'>
+            <img class="cards__image" src="./images/cards-recall.png" alt='Здесь находится картинка'>
             <h3 class="cards__title">Recall</h3>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции памяти.</p>
           </li>
 
           <li class="cards__item">
-            <img class="cards__image" src="./images/cards-interliving.png"
-              alt='Здесь находится картинка для этой карточки'>
+            <img class="cards__image" src="./images/cards-interliving.png" alt='Здесь находится картинка'>
             <h3 class="cards__title">Интерливинг</h3>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </li>
 
           <li class="cards__item">
-            <img class="cards__image" src="./images/cards-question.png"
-              alt='Здесь находится картинка для этой карточки'>
+            <img class="cards__image" src="./images/cards-question.png" alt='Здесь находится картинка'>
             <h3 class="cards__title">Вопросы</h3>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно
               волнует.
@@ -76,8 +72,7 @@
           </li>
 
           <li class="cards__item">
-            <img class="cards__image" src="./images/cards-competence.png"
-              alt='Здесь находится картинка для этой карточки'>
+            <img class="cards__image" src="./images/cards-competence.png" alt='Здесь находится картинка'>
             <h3 class="cards__title">Иллюзия компетентности</h3>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы
               владеете новой темой.</p>
@@ -89,10 +84,10 @@
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <iframe class="video__iframe" id="ytvideo1" width="720" height="405"
-            src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen></iframe>
-          <iframe class="video__iframe" id="ytvideo2" width="720" height="405"
-            src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
+          <iframe class="video__iframe" id="ytvideo1" src="https://www.youtube.com/embed/arj7oStGLkU"
+            allowfullscreen></iframe>
+          <iframe class="video__iframe" id="ytvideo2" src="https://www.youtube.com/embed/5MgBikgcWnY"
+            allowfullscreen></iframe>
         </div>
       </section>
 
@@ -170,21 +165,22 @@
       </section>
 
       <section class="khan">
-        <article class="khan__container">
+        <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по
+            всему
             миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
             смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
-          </p>
-          <p class="khan__quote-author">Джордж Лукас</p>
+          </blockquote>
+          <h3 class="khan__quote-author">Джордж Лукас</h3>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
             <img class="khan__book-pic" src="./images/khan-book.jpg" alt="Изображение книги Салман
               Хан Весь мир - школа">
             <a target=" _blank" href=" #" class="khan__buy-link transition">Купить книгу →</a>
           </div>
-        </article>
+        </div>
       </section>
 
       <section class="kaufman">
@@ -246,23 +242,27 @@
 
         </ul>
       </section>
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <ul class="resources__logo-zone">
+          <li><a class="resources__link transition" href="#" target="_blank"><img class=" resources__logo"
+                src="./images/logo/resources-arzamas.svg" alt="Логотип ресурса Arzamas"></a>
+          </li>
+          <li><a class="resources__link transition" href="#" target="_blank"><img class=" resources__logo"
+                src="./images/logo/resources-n1.svg" alt="Логотип ресурса N+1"></a>
+          </li>
+          <li><a class="resources__link transition" href="#" target="_blank"><img class=" resources__logo"
+                src="./images/logo/resources-strelka.svg" alt="Логотип ресурса STRELKA"></a>
+          </li>
+          <li><a class="resources__link transition" href="#" target="_blank"><img class=" resources__logo"
+                src="./images/logo/resources-polka.svg" alt="Логотип ресурса ПОЛКА"></a>
+          </li>
+        </ul>
+      </section>
+
     </main>
-
-    <section class="resources">
-      <h2 class="section-title">Полезные ресурсы</h2>
-      <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-      <div class="resources__logo-zone">
-        <a class="resources__link" href="#" target="_blank"><img class=" resources__logo"
-            src="./images/logo/resources-arzamas.svg" alt="Логотип ресурса Arzamas"></a>
-        <a class="resources__link" href="#" target="_blank"><img class=" resources__logo"
-            src="./images/logo/resources-n1.svg" alt="Логотип ресурса N+1"></a>
-        <a class="resources__link" href="#" target="_blank"><img class=" resources__logo"
-            src="./images/logo/resources-strelka.svg" alt="Логотип ресурса STRELKA"></a>
-        <a class="resources__link" href="#" target="_blank"><img class=" resources__logo"
-            src="./images/logo/resources-polka.svg" alt="Логотип ресурса ПОЛКА"></a>
-      </div>
-
-    </section>
 
     <footer class="footer">
       <div class="footer__columns">
@@ -274,20 +274,20 @@
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <nav class="footer__column-links">
-            <a class="footer__column-link" href="#" target="_blank">Главная</a>
-            <a class="footer__column-link" href="#" target="_blank">Концепеция</a>
-            <a class="footer__column-link" href="#" target="_blank">Наставники</a>
+            <a class="footer__column-link transition" href="#" target="_blank">Главная</a>
+            <a class="footer__column-link transition" href="#" target="_blank">Концепеция</a>
+            <a class="footer__column-link transition" href="#" target="_blank">Наставники</a>
           </nav>
         </div>
 
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <nav class="footer__column-links">
-            <a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon"
+            <a class="footer__column-link transition" href="#" target="_blank"><img class="footer__social-icon"
                 src="./images/youtube-icon.svg" alt="Логотип Youtube">YouTube</a>
-            <a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon"
+            <a class="footer__column-link transition" href="#" target="_blank"><img class="footer__social-icon"
                 src="./images/vk_color_white.svg" alt="Логотип ВКонтакте">ВКонтакте</a>
-            <a class="footer__column-link" href="#" target="_blank"><img class="footer__social-icon"
+            <a class="footer__column-link transition" href="#" target="_blank"><img class="footer__social-icon"
                 src="./images/tiktok-icon.svg" alt="Логотип ТикТок">TikTok</a>
           </nav>
         </div>

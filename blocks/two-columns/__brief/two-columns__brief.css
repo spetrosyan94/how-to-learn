@@ -4,6 +4,7 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   color: #2f80ed;
 }
